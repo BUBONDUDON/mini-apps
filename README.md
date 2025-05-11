@@ -1,2 +1,2 @@
 # mini-apps
-vk-mini-app
+vk-mini-app ываываываываыва
