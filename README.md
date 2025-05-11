@@ -5,14 +5,13 @@
 Размещение при помощи [vk-miniapps-deploy](https://dev.vk.com/ru/mini-apps/development/hosting)
 # Всё что нужно для счастья
 Скачать в папку
-зайти в vk-hosting-config.json, указать id в app_id
-
 ```sh
 cd путь кпапке тут
 ```
 ```sh
 npm i
 ```
+зайти в vk-hosting-config.json, указать id в app_id
 ```sh
 npm run start
 ```
