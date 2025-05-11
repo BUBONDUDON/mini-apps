@@ -1,9 +1,9 @@
 ## Почти обычные вк мини-приложения 
+### в бранчах 2 мини-приложения
 # Из используемого
 Чуть чуть [VKUI](https://vkcom.github.io/VKUI/) и [icons](https://vkcom.github.io/icons/)
 Вся маршрутизация на [vk-mini-apps-router](https://dev.vk.com/ru/libraries/router)
 Размещение при помощи [vk-miniapps-deploy](https://dev.vk.com/ru/mini-apps/development/hosting)
-### в бранчах 2 мини-приложения
 # Всё что нужно для счастья
 Скачать в папку
 ```sh
