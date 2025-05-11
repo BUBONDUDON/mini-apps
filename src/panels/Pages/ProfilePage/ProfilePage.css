@@ -1,0 +1,144 @@
+/* Категории с белым фоном */
+.category-list {
+  background-color: white;
+  padding: 10px 20px;
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.category-list.visible {
+  display: flex;
+}
+
+/* Категория (Живопись и Диджитал-арт) */
+
+/* Блок достижений */
+.achievements-icons {
+  display: grid;
+  grid-template-columns: repeat(5, 44px);
+  grid-template-rows: repeat(2, 44px);
+  gap: 12px;
+  justify-content: center;
+  margin: 10px auto;
+  padding: 30px 0 10px; /* сверху больше паддинга */
+  position: relative;
+}
+
+/* Тень */
+.achievements-icons::after {
+  content: '';
+  position: absolute;
+  bottom: 10px; /* выдвигаем тень выше */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 270px; /* шире, чтобы перекрывала всю сетку */
+  height: 70px;
+  background: linear-gradient(to top, rgba(0, 0, 0.1, 0.2), transparent); /* тёмная тень */
+  border-radius: 0px;
+  pointer-events: none;
+}
+
+
+
+/* Один кружочек */
+.achievement-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+
+
+.achievements-button:active {
+  transform: scale(0.96);
+}
+
+.profile-page-content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+/* Кнопки "Избранное" и "Мои тесты" */
+.my-button-group {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.my-button {
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 24px;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+.my-button:active {
+  transform: scale(0.96);
+}
+
+/* Поворот стрелки */
+button img {
+  transition: transform 0.3s ease;
+}
+
+button[style*="transform: rotate(180deg)"] img {
+  transform: rotate(180deg);
+}
+
+/* Для страницы с прокруткой до конца */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+
+
+
+.View {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.Panel {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow-y: auto; /* сюда переносим скролл */
+  padding-bottom: 80px;
+  box-sizing: border-box;
+}
+
+
+/* Убедись, что твой .Panel настроен так */
+.Panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* BottomMenu */
+.bottom-menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: white;
+  z-index: 100;
+  border-top: 1px solid #ccc;
+}
